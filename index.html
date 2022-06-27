@@ -21,6 +21,60 @@
     />
   </head>
   <body class="font-body font-reguler">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-300 border-b-2 border-solid border-black"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a href="#" class="header__logo text-[20px] text-black font-bold"
+          >.AUSTIN.</a
+        >
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-6">
+            <li class="header__item">
+              <a href="#" class="header__link active-link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Work</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Awards</a>
+            </li>
+          </ul>
+
+          <ul class="header__social inline-flex items-center gap-4 mt-6">
+            <a href="#" class="header__social-icon">
+              <i class="bx bxl-dribbble"></i>
+            </a>
+            <a href="#" class="header__social-icon">
+              <i class="bx bxl-youtube"></i>
+            </a>
+            <a href="#" class="header__social-icon">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="header__social-icon">
+              <i class="bx bxl-tiktok"></i>
+            </a>
+          </ul>
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
     <!-- ===== MAIN JS ===== -->
     <script type="module" src="./src/js/main.js"></script>
   </body>

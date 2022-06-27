@@ -35,7 +35,7 @@ module.exports = {
       text: "170%",
     },
     transitionDuration: {
-      400: "300ms",
+      300: "300ms",
     },
     extend: {},
   },
