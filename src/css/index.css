@@ -52,3 +52,11 @@
 .home__content:nth-child(2) {
   @apply bg-yellow border-t-2 border-solid border-black;
 }
+
+/* ===== PARTNER SECTION ===== */
+.partner__content {
+  @apply justify-self-center;
+}
+.partner__img {
+  @apply w-[120px];
+}
