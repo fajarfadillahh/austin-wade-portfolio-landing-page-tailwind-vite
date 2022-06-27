@@ -46,8 +46,11 @@
 }
 
 /* ===== HOME SECTION ===== */
+.home__bg {
+  @apply flex justify-self-center justify-center items-center p-8;
+}
 .home__content {
-  @apply flex justify-self-center justify-center items-center p-8 bg-purple;
+  @apply bg-purple;
 }
 .home__content:nth-child(2) {
   @apply bg-yellow border-t-2 border-solid border-black;
