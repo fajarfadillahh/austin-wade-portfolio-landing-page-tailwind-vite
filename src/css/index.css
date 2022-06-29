@@ -76,8 +76,6 @@
 }
 
 /* ===== PORTFOLIO SECTION ===== */
-
-/* ===== PORTFOLIO SECTION ===== */
 .portfolio__wrapper {
   @apply grid;
 }
@@ -112,4 +110,34 @@
 /* portfolio 3 = remove border-b */
 .portfolio__wrapper:nth-child(3) .portfolio__content:nth-child(2) {
   @apply border-b-0;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq__accordion {
+  @apply grid gap-6;
+}
+.faq__accordion-item {
+  @apply bg-white border-2 border-solid border-black shadow-[-4px_4px_0_rgba(0,0,0,1)] rounded-[10px] transition-all duration-300;
+}
+.faq__accordion-header {
+  @apply flex justify-center items-center gap-2 p-6 rounded-[.5rem] cursor-pointer transition-all duration-300;
+}
+.faq__accordion-title {
+  @apply text-[16px] font-semibold;
+}
+.faq__accordion-icon {
+  @apply inline-flex text-[1.5rem] transition-all duration-300;
+}
+.faq__accordion-content {
+  @apply overflow-hidden h-0 transition-all duration-300;
+}
+.faq__accordion-text {
+  @apply text-[13px] leading-text px-6 pb-6 transition-all duration-300;
+}
+/* accordion open */
+.accordion-open .faq__accordion-icon {
+  @apply rotate-45;
+}
+.accordion-open.faq__accordion-item {
+  @apply bg-green;
 }
