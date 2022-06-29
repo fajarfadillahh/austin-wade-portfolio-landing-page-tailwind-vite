@@ -40,3 +40,14 @@ const toggleItem = (item) => {
     item.classList.add("accordion-open");
   }
 };
+
+// ===== SCROLLUP SECTION =====
+const scrollY = window.pageYOffset;
+function scrollUp() {
+  const scrollup = document.getElementById("scroll-up");
+
+  this.scrollY > 300
+    ? scrollup.classList.add("scroll-action")
+    : scrollup.classList.remove("scroll-action");
+}
+window.addEventListener("scroll", scrollUp);

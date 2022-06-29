@@ -152,3 +152,11 @@
 .footer__link.active-link {
   @apply font-semibold;
 }
+
+/* ===== SCROLLUP SECTION ===== */
+.scrollup {
+  @apply fixed right-6 -bottom-full w-[45px] h-[45px] flex justify-center items-center p-[.2rem] bg-green border-2 border-solid border-black rounded-[10px] text-[1.5rem] text-black transition-all duration-300 hover:shadow-[-4px_4px_0_rgba(0,0,0,1)];
+}
+.scrollup.scroll-action {
+  @apply bottom-12;
+}
