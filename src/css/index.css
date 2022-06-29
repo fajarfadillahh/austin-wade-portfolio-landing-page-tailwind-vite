@@ -47,7 +47,7 @@
 
 /* ===== HOME SECTION ===== */
 .home__bg {
-  @apply flex justify-self-center justify-center items-center p-8;
+  @apply flex justify-center items-center p-8;
 }
 .home__content {
   @apply bg-purple;
@@ -58,7 +58,7 @@
 
 /* ===== PARTNER SECTION ===== */
 .partner__content {
-  @apply justify-self-center;
+  @apply self-center;
 }
 .partner__img {
   @apply w-[120px];
@@ -73,4 +73,43 @@
 }
 .feature__item-text {
   @apply text-[15px] text-black leading-text;
+}
+
+/* ===== PORTFOLIO SECTION ===== */
+
+/* ===== PORTFOLIO SECTION ===== */
+.portfolio__wrapper {
+  @apply grid;
+}
+.portfolio__bg {
+  @apply flex justify-center items-center p-8;
+}
+.portfolio__bg:nth-child(1) {
+  @apply flex-col;
+}
+.portfolio__data {
+  @apply text-center pb-8 border-b-2 border-solid border-black;
+}
+.portfolio__title {
+  @apply text-[24px] text-black font-bold mb-4;
+}
+.portfolio__tags {
+  @apply inline-flex items-center gap-4 mt-8;
+}
+.portfolio__tag {
+  @apply inline-flex justify-center py-2 px-4 border-2 border-solid border-black  text-[15px] text-black font-semibold rounded-[10px];
+}
+.portfolio__content {
+  @apply bg-transparent;
+}
+.portfolio__content:nth-child(2) {
+  @apply bg-yellow border-y-2 border-solid border-black;
+}
+/* portfolio 2 = bg-pink */
+.portfolio__wrapper:nth-child(2) .portfolio__content:nth-child(2) {
+  @apply bg-pink;
+}
+/* portfolio 3 = remove border-b */
+.portfolio__wrapper:nth-child(3) .portfolio__content:nth-child(2) {
+  @apply border-b-0;
 }
