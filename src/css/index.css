@@ -141,3 +141,14 @@
 .accordion-open.faq__accordion-item {
   @apply bg-green;
 }
+
+/* ===== FOOTER SECTION ===== */
+.footer__list {
+  @apply inline-flex items-center gap-6;
+}
+.footer__link {
+  @apply text-[15px] text-white;
+}
+.footer__link.active-link {
+  @apply font-semibold;
+}
