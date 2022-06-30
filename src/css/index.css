@@ -160,3 +160,34 @@
 .scrollup.scroll-action {
   @apply bottom-12;
 }
+
+/* ===== MEDIA QUERIES ===== */
+/* width 480px */
+@screen xs {
+  .section-title {
+    @apply text-[32px];
+  }
+
+  .home__data,
+  .feature__data,
+  .portfolio__header-title,
+  .portfolio__data,
+  .about__data,
+  .testimonial__data,
+  .footer__data {
+    @apply w-[400px];
+  }
+
+  .feature__item-title,
+  .portfolio__title {
+    @apply text-[28px];
+  }
+
+  .home__img,
+  .feature__img,
+  .portfolio__img,
+  .about__img,
+  .testimonial__img {
+    @apply w-[400px];
+  }
+}
