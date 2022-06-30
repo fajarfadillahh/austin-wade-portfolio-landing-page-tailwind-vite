@@ -161,6 +161,11 @@
   @apply bottom-12;
 }
 
+/* ===== ::SELECTION SECTION ===== */
+::selection {
+  @apply bg-purple bg-opacity-70 text-white;
+}
+
 /* ===== MEDIA QUERIES ===== */
 /* width 480px */
 @screen xs {
