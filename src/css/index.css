@@ -225,3 +225,30 @@
     @apply w-[480px];
   }
 }
+
+/* width 767px */
+@screen md {
+  .header__container {
+    @apply relative;
+  }
+
+  .header__logo {
+    @apply absolute left-[50%] translate-x-[-50%];
+  }
+
+  .header__menu {
+    @apply w-full flex justify-between items-center gap-6;
+  }
+
+  .header__list {
+    @apply flex-row;
+  }
+
+  .header__social {
+    @apply mt-0;
+  }
+
+  .header__toggle {
+    @apply hidden;
+  }
+}
